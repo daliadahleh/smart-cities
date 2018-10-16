@@ -1,0 +1,1465 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY adms "http://www.w3.org/ns/adms#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY ns "http://creativecommons.org/ns#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Environment "http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl.#"
+     xml:base="http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl."
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:Environment="http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/">
+    <owl:Ontology rdf:about="http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl">
+        <rdfs:label xml:lang="en">ISO37120 Environment Theme Indicators Definitions</rdfs:label>
+        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+        <owl:versionInfo xml:lang="en">1.0 30 September 2016</owl:versionInfo>
+        <rdfs:comment xml:lang="en">This ontology implements the definitions of the ISO37120 Environment Theme Indicators using the following ontologys:
+
+GCI Foundation Ontologies:
+    http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl
+    (http://eil.utoronto.ca/smartcities/papers/GCI-Foundation-Ontology.pdf)
+
+GCI Environment Ontologies:
+    http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl
+    http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl
+    http://ontology.eil.utoronto.ca/GCI/Environment/Species.owl
+  (http://eil.mie.utoronto.ca/wp-content/uploads/2015/06/GCI-Environmental-Ontology-Final-17sep2016.pdf)
+
+Developed by the Information Engineering Group, Mechanical &amp; Industrial Engineering, University of Toronto. 
+
+Contact:  Dalia Dahleh, dalia.dahleh@mail.utoronto.ca
+                 Mark S. Fox, msf@eil.utoronto.ca</rdfs:comment>
+        <vann:preferredNamespaceUri>http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#</vann:preferredNamespaceUri>
+        <terms:creator xml:lang="en">Dalia Dahleh (dalia.dahleh@mail.utoronto.ca)
+Mark Fox (msf@eil.utoronto.ca)</terms:creator>
+        <terms:title xml:lang="en">ISO37120 Environment Theme Indicators Definitions</terms:title>
+        <adms:relatedDocumentation xml:lang="en">http://eil.mie.utoronto.ca/wp-content/uploads/2015/06/GCI-Environmental-Ontology-Final-17sep2016.pdf</adms:relatedDocumentation>
+        <vann:preferredNamespacePrefix xml:lang="en">iso37120en</vann:preferredNamespacePrefix>
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl"/>
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl"/>
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Species.owl"/>
+        <owl:imports rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#preferredNamespaceURI -->
+
+    <owl:AnnotationProperty rdf:about="&Environment;preferredNamespaceURI"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#preferrredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&Environment;preferrredNamespacePrefix"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#addition_of -->
+
+    <owl:ObjectProperty rdf:about="&Environment;addition_of"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#day-evening-night -->
+
+    <owl:ObjectProperty rdf:about="&Environment;day-evening-night"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#for_year -->
+
+    <owl:ObjectProperty rdf:about="&Environment;for_year"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure_or_measurement_scale -->
+
+    <owl:ObjectProperty rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure_or_measurement_scale"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#databaseURI -->
+
+    <owl:DatatypeProperty rdf:about="&Environment;databaseURI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CH4_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CH4_concentration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#CH4_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CO2_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CO2_concentration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#CO2_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration">
+        <rdfs:subClassOf rdf:resource="&Environment;8.3_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#temporal_average"/>
+                <owl:someValuesFrom rdf:resource="&Environment;GHGs_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#HFCs_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#HFCs_concentration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#HFCs_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#N2O_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#N2O_concentration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#N2O_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#NO2_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#NO2_concentration">
+        <rdfs:subClassOf rdf:resource="&Environment;8.4_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#NO2_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#temporal_average"/>
+                <owl:someValuesFrom rdf:resource="&Environment;NO2_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Noise_pollution_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Noise_pollution_concentration">
+        <rdfs:subClassOf rdf:resource="&Environment;8.7_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#temporal_average"/>
+                <owl:someValuesFrom rdf:resource="&Environment;Noise_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#Noise_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#O3_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#O3_concentration">
+        <rdfs:subClassOf rdf:resource="&Environment;8.6_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#O3_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#temporal_average"/>
+                <owl:someValuesFrom rdf:resource="&Environment;O3_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PFCs_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PFCs_concentration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#PFCs_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_Mass -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_Mass">
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;databaseURI"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_Volume -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_Volume">
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;databaseURI"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_concentration">
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#temporal_average"/>
+                <owl:someValuesFrom rdf:resource="&Environment;PM10_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;databaseURI"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#PM10_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_Mass -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_Mass">
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;databaseURI"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_Volume -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_Volume">
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;databaseURI"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_concentration">
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;databaseURI"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#PM2.5_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#temporal_average"/>
+                <owl:someValuesFrom rdf:resource="&Environment;PM2.5_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Pollution_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Pollution_concentration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;databaseURI"/>
+                <owl:someValuesFrom rdf:resource="&xsd;string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2006/time#inDateTime"/>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Instant"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:onClass rdf:resource="http://schema.org/GeoCoordinates"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SF6_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SF6_concentration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#SF6_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SO2_concentration -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SO2_concentration">
+        <rdfs:subClassOf rdf:resource="&Environment;8.5_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#SO2_Sensing_device"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#temporal_average"/>
+                <owl:someValuesFrom rdf:resource="&Environment;SO2_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#City_population -->
+
+    <owl:Class rdf:about="&Environment;City_population">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#defined_by"/>
+                <owl:someValuesFrom rdf:resource="&Environment;City_resident"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#for_city"/>
+                <owl:onClass rdf:resource="http://schema.org/City"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#City_population_size -->
+
+    <owl:Class rdf:about="&Environment;City_population_size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Population_size"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#cardinality_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;City_population"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#City_resident -->
+
+    <owl:Class rdf:about="&Environment;City_resident">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#for_city"/>
+                <owl:onClass rdf:resource="http://schema.org/City"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Days -->
+
+    <owl:Class rdf:about="&Environment;Days">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Singular_unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Days_in_year -->
+
+    <owl:Class rdf:about="&Environment;Days_in_year">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/value"/>
+                <owl:someValuesFrom rdf:resource="&Environment;Measure_of_days_in_year"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Environment_GCI -->
+
+    <owl:Class rdf:about="&Environment;Environment_GCI">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.geonames.org/ontology/ontology_v3.1.rdf#locatedIn"/>
+                <owl:onClass rdf:resource="http://schema.org/City"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;for_year"/>
+                <owl:onClass rdf:resource="http://www.w3.org/2006/time#Year"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#GHGs_Readings -->
+
+    <owl:Class rdf:about="&Environment;GHGs_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.3_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_GHGs"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#GHGs_average -->
+
+    <owl:Class rdf:about="&Environment;GHGs_average">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.3_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#ISO37120_Environment_Thing -->
+
+    <owl:Class rdf:about="&Environment;ISO37120_Environment_Thing"/>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Lden -->
+
+    <owl:Class rdf:about="&Environment;Lden">
+        <rdfs:subClassOf rdf:resource="&Environment;8.7_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;day-evening-night"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Noise_pollution_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#decibel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#LdenHigh_population -->
+
+    <owl:Class rdf:about="&Environment;LdenHigh_population">
+        <rdfs:subClassOf rdf:resource="&Environment;8.7_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#defined_by"/>
+                <owl:someValuesFrom rdf:resource="&Environment;Lden"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#LdenHigh_population_size -->
+
+    <owl:Class rdf:about="&Environment;LdenHigh_population_size">
+        <rdfs:subClassOf rdf:resource="&Environment;8.7_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#cardinality_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;LdenHigh_population"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Measure_of_days_in_year -->
+
+    <owl:Class rdf:about="&Environment;Measure_of_days_in_year">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="&Environment;Days"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#NO2_Average_Readings -->
+
+    <owl:Class rdf:about="&Environment;NO2_Average_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.4_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;NO2_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_NO2"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#NO2_average -->
+
+    <owl:Class rdf:about="&Environment;NO2_average">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.4_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Net_change_in_species -->
+
+    <owl:Class rdf:about="&Environment;Net_change_in_species">
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&Environment;addition_of"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&Environment;SpeciesExtinct_size"/>
+                            <rdf:Description rdf:about="&Environment;SpeciesIntroduced_size"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Noise_average -->
+
+    <owl:Class rdf:about="&Environment;Noise_average">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.7_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#decibel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#O3_Average_Readings -->
+
+    <owl:Class rdf:about="&Environment;O3_Average_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.6_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;O3_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_O3"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#O3_average -->
+
+    <owl:Class rdf:about="&Environment;O3_average">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.6_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM10_Mass_Readings -->
+
+    <owl:Class rdf:about="&Environment;PM10_Mass_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;PM10_Total_Mass"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_Mass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM10_Total_Mass -->
+
+    <owl:Class rdf:about="&Environment;PM10_Total_Mass">
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM10_Total_Volume -->
+
+    <owl:Class rdf:about="&Environment;PM10_Total_Volume">
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Volume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM10_Volume_Readings -->
+
+    <owl:Class rdf:about="&Environment;PM10_Volume_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_Volume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;PM10_Total_Volume"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM10_average -->
+
+    <owl:Class rdf:about="&Environment;PM10_average">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM2.5_Mass_Readings -->
+
+    <owl:Class rdf:about="&Environment;PM2.5_Mass_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_Mass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;PM2.5_Total_Mass"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM2.5_Total_Mass -->
+
+    <owl:Class rdf:about="&Environment;PM2.5_Total_Mass">
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Mass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM2.5_Total_Volume -->
+
+    <owl:Class rdf:about="&Environment;PM2.5_Total_Volume">
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Volume"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM2.5_Volume_Readings -->
+
+    <owl:Class rdf:about="&Environment;PM2.5_Volume_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_Volume"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;PM2.5_Total_Volume"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#PM2.5_average -->
+
+    <owl:Class rdf:about="&Environment;PM2.5_average">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#SO2_Average_Readings -->
+
+    <owl:Class rdf:about="&Environment;SO2_Average_Readings">
+        <rdfs:subClassOf rdf:resource="&Environment;8.5_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_described_by"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_SO2"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#is_composed_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;SO2_average"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#SO2_average -->
+
+    <owl:Class rdf:about="&Environment;SO2_average">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Pollution_average"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.5_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Observation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#SpeciesExtinct -->
+
+    <owl:Class rdf:about="&Environment;SpeciesExtinct">
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#defined_by"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Species.owl#SpeciesExtinction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#SpeciesExtinct_size -->
+
+    <owl:Class rdf:about="&Environment;SpeciesExtinct_size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Population_size"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#cardinality_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;SpeciesExtinct"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#SpeciesIntroduced -->
+
+    <owl:Class rdf:about="&Environment;SpeciesIntroduced">
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#defined_by"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Species.owl#SpeciesIntroduction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#SpeciesIntroduced_size -->
+
+    <owl:Class rdf:about="&Environment;SpeciesIntroduced_size">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Population_size"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#cardinality_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;SpeciesIntroduced"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#TaxonomicGroupPopulation -->
+
+    <owl:Class rdf:about="&Environment;TaxonomicGroupPopulation">
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Population"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#defined_by"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Species.owl#TaxonomicGroup"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Total_number_of_species -->
+
+    <owl:Class rdf:about="&Environment;Total_number_of_species">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Population_size"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#cardinality_of"/>
+                <owl:someValuesFrom rdf:resource="&Environment;TaxonomicGroupPopulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Yearly_Sum_GHGs -->
+
+    <owl:Class rdf:about="&Environment;Yearly_Sum_GHGs">
+        <rdfs:subClassOf rdf:resource="&Environment;8.3_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Yearly_Sum_NO2 -->
+
+    <owl:Class rdf:about="&Environment;Yearly_Sum_NO2">
+        <rdfs:subClassOf rdf:resource="&Environment;8.4_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Yearly_Sum_O3 -->
+
+    <owl:Class rdf:about="&Environment;Yearly_Sum_O3">
+        <rdfs:subClassOf rdf:resource="&Environment;8.6_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#Yearly_Sum_SO2 -->
+
+    <owl:Class rdf:about="&Environment;Yearly_Sum_SO2">
+        <rdfs:subClassOf rdf:resource="&Environment;8.5_Thing"/>
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/govstat.owl#Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#tonnes_per_capita -->
+
+    <owl:Class rdf:about="&Environment;tonnes_per_capita">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Unit_division"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#tonne"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.1_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.1_Thing">
+        <rdfs:label>8.1_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.2_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.2_Thing">
+        <rdfs:label>8.2_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.3_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.3_Thing">
+        <rdfs:label>8.3_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.4_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.4_Thing">
+        <rdfs:label>8.4_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.5_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.5_Thing">
+        <rdfs:label>8.5_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.6_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.6_Thing">
+        <rdfs:label>8.6_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.7_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.7_Thing">
+        <rdfs:label>8.7_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.8_Thing -->
+
+    <owl:Class rdf:about="&Environment;8.8_Thing">
+        <rdfs:label>8.8_Thing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;ISO37120_Environment_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.1 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.1">
+        <rdfs:label>Fine particulate matter (PM2.5) concentration (ISO37120-8.1)</rdfs:label>
+        <rdfs:label xml:lang="en">Fine particulate matter (PM2.5) concentration  (core indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.1_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/denominator"/>
+                <owl:onClass rdf:resource="&Environment;PM2.5_Total_Volume"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#microgram_per_cubic_metre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.2 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.2">
+        <rdfs:label>Particulate matter (PM10) concentration (ISO37120-8.2)</rdfs:label>
+        <rdfs:label xml:lang="en">Particulate matter (PM10) concentration (core indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.2_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="&Environment;PM10_Total_Mass"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/denominator"/>
+                <owl:onClass rdf:resource="&Environment;PM10_Total_Volume"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#microgram_per_cubic_metre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.3 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.3">
+        <rdfs:label>Greenhouse gas emissions measured in tonnes per capita (ISO37120-8.3)</rdfs:label>
+        <rdfs:label xml:lang="en">Greenhouse gas emissions measured in tonnes per capita (core indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.3_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#denominator"/>
+                <owl:onClass rdf:resource="&Environment;City_population"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="&Environment;tonnes_per_capita"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_GHGs"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.4 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.4">
+        <rdfs:label>NO2 (nitrogen dioxide) concentration (ISO37120-8.4)</rdfs:label>
+        <rdfs:label xml:lang="en">NO2 (nitrogen dioxide) concentration (supporting indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.4_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/denominator"/>
+                <owl:onClass rdf:resource="&Environment;Days_in_year"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_NO2"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#microgram_per_cubic_metre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.5 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.5">
+        <rdfs:label>SO2 (sulphur dioxide) concentration (ISO37120-8.5)</rdfs:label>
+        <rdfs:label xml:lang="en">SO2 (sulphur dioxide) concentration (supporting indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.5_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/denominator"/>
+                <owl:onClass rdf:resource="&Environment;Days_in_year"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_SO2"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#microgram_per_cubic_metre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.6 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.6">
+        <rdfs:label>O3 (Ozone) concentration (ISO37120-8.6)</rdfs:label>
+        <rdfs:label xml:lang="en">O3 (Ozone) concentration (supporting indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.6_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/denominator"/>
+                <owl:onClass rdf:resource="&Environment;Days_in_year"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#microgram_per_cubic_metre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="&Environment;Yearly_Sum_O3"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.7 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.7">
+        <rdfs:label>Noise Pollution (ISO37120-8.7)</rdfs:label>
+        <rdfs:label xml:lang="en">Noise pollution (supporting indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.7_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#numerator"/>
+                <owl:onClass rdf:resource="&Environment;LdenHigh_population_size"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#denominator"/>
+                <owl:onClass rdf:resource="&Environment;City_population"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/ISO37120.owl#8.8 -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.8">
+        <rdfs:label>Percentage change in number of native species (ISO37120-8.8)</rdfs:label>
+        <rdfs:label xml:lang="en">Percentage change in number of native species (supporting indicator)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&Environment;Environment_GCI"/>
+        <rdfs:subClassOf rdf:resource="&Environment;8.8_Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="&Environment;Net_change_in_species"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure"/>
+                <owl:allValuesFrom rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Percentage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/denominator"/>
+                <owl:onClass rdf:resource="&Environment;Total_number_of_species"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/Percentage -->
+
+    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Percentage">
+        <rdfs:label xml:lang="en">percentage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/value"/>
+                <owl:allValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/unit_of_measure_or_measurement_scale"/>
+                        <owl:allValuesFrom rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Percentage_unit"/>
+                    </owl:Restriction>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/Percentage_unit -->
+
+    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Percentage_unit">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Percentage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure -->
+
+    <rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/numerator"/>
+                <owl:onClass rdf:resource="&Environment;PM2.5_Total_Mass"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.1"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.2"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.3"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.4"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.5"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.6"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.7"/>
+            <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.8"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

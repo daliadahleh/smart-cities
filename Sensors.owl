@@ -1,0 +1,1254 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY adms "http://www.w3.org/ns/adms#" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY ns "http://creativecommons.org/ns#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Sensors "http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/dalia/ontologies/2016/8/untitled-ontology-71#"
+     xml:base="http://www.semanticweb.org/dalia/ontologies/2016/8/untitled-ontology-71"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Sensors="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl">
+        <rdfs:label xml:lang="en">Global City Indicator Environment Ontologies - Sensors Ontology</rdfs:label>
+        <owl:versionInfo>1.0 30 September 2016</owl:versionInfo>
+        <vann:preferredNamespacePrefix>sen</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#</vann:preferredNamespaceUri>
+        <terms:title>Global City Indicator Environment Ontologies - Sensors Ontology</terms:title>
+        <terms:creator xml:lang="en">Dalia Dahleh, dalia.dahleh@mail.utoronto.ca
+Mark Fox, msf@eil.utoronto.ca</terms:creator>
+        <terms:description xml:lang="en">Global City Indicator Sensors Ontology developed by the Enterprise Integration Lab,  Mechanical &amp; Industrial Engineering, University of Toronto. http://eil.utoronto.ca
+
+Extends the Foundation Ontology for Global City Indicators to cover the Environment Indicators.
+
+See: Fox, M.S., (2013), &quot;A Foundation Ontology for Global City Indicators&quot;, Global City Institute Working Paper, Global Cities Institute, University of Toronto
+
+All papers can be found at: http://www.eil.utoronto.ca/applications/smartcities/
+
+Contact: Dalia Dahleh, dalia.dahleh@mail.utoronto.ca
+                Mark S. Fox, msf@eil.utoronto.ca
+http://www.eil.utoronto.ca/applications/smartcities/</terms:description>
+        <adms:relatedDocumentation>http://www.eil.utoronto.ca/applications/smartcities/</adms:relatedDocumentation>
+        <ns:license>http://creativecommons.org/licenses/by/3.0/</ns:license>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="&ns;license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="&terms;creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="&terms;description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="&terms;title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="&vann;preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#relatedDocumentation -->
+
+    <owl:AnnotationProperty rdf:about="&adms;relatedDocumentation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#detects -->
+
+    <owl:ObjectProperty rdf:about="http://purl.oclc.org/NET/ssnx/ssn#detects">
+        <rdfs:label>detects</rdfs:label>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+        <rdfs:comment>A relation from a sensor to the Stimulus that the sensor can detect.   
+The Stimulus itself will be serving as a proxy for (see isProxyOf) some observable property.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/phenomenon -->
+
+    <owl:ObjectProperty rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/phenomenon">
+        <rdfs:domain rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/value -->
+
+    <owl:ObjectProperty rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/value">
+        <rdfs:domain rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#databaseURI -->
+
+    <owl:DatatypeProperty rdf:about="http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#databaseURI"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CH4_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CH4_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CO2_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CO2_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#HFCs_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#HFCs_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#N2O_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#N2O_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#NO2_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#NO2_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Noise_pollution_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Noise_pollution_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#O3_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#O3_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PFCs_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PFCs_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Pollution_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Pollution_concentration">
+        <rdfs:subClassOf rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:onClass rdf:resource="http://schema.org/GeoCoordinates"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The different types of pollution concentrations that are represented in the ISO37120 Environment indicators - these record the actual measurements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SF6_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SF6_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#GHGs_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SO2_concentration -->
+
+    <owl:Class rdf:about="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SO2_concentration">
+        <rdfs:subClassOf rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Air_pollution_concentration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#CH4_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;CH4_Sensing_device">
+        <rdfs:subClassOf rdf:resource="&Sensors;GHGs_Sensing_device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CH4_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#CO2_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;CO2_Sensing_device">
+        <rdfs:subClassOf rdf:resource="&Sensors;GHGs_Sensing_device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#CO2_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#GHGs_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;GHGs_Sensing_device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:comment>Device used to measure greenhouse gases</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#HFCs_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;HFCs_Sensing_device">
+        <rdfs:subClassOf rdf:resource="&Sensors;GHGs_Sensing_device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#HFCs_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#N2O_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;N2O_Sensing_device">
+        <rdfs:subClassOf rdf:resource="&Sensors;GHGs_Sensing_device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#N2O_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#NO2_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;NO2_Sensing_device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#NO2_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sensing device used to measure NO2 concentration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#Noise_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;Noise_Sensing_device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#Noise_pollution_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sensing device used to measure noise concentration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#O3_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;O3_Sensing_device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#O3_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sensing device used to measure O3 concentration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#PFCs_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;PFCs_Sensing_device">
+        <rdfs:subClassOf rdf:resource="&Sensors;GHGs_Sensing_device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PFCs_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#PM10_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;PM10_Sensing_device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM10_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sensing device used to measure PM10 concentration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#PM2.5_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;PM2.5_Sensing_device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#PM2.5_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sensing device used to measure PM2.5 concentration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#SF6_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;SF6_Sensing_device">
+        <rdfs:subClassOf rdf:resource="&Sensors;GHGs_Sensing_device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SF6_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://ontology.eil.utoronto.ca/GCI/Environment/Sensors.owl#SO2_Sensing_device -->
+
+    <owl:Class rdf:about="&Sensors;SO2_Sensing_device">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://ontology.eil.utoronto.ca/GCI/Environment/Pollution.owl#SO2_concentration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Sensing device used to measure SO2 concentration</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#SensingDevice -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensingDevice">
+        <rdfs:label>Sensing Device</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#detects"/>
+                <owl:someValuesFrom rdf:resource="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation"/>
+                <owl:onClass rdf:resource="http://schema.org/GeoCoordinates"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:source>http://www.w3.org/2005/Incubator/ssn/</dc:source>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Sensor#Measuring</rdfs:seeAlso>
+        <rdfs:comment>A sensing device is a device that implements sensing.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#Sensor -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Sensor">
+        <rdfs:label>Sensor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+        <rdfs:comment>A sensor can do (implements) sensing: that is, a sensor is any entity that can follow a sensing method and thus observe some Property of a FeatureOfInterest.  Sensors may be physical devices, computational methods, a laboratory setup with a person following a method, or any other thing that can follow a Sensing Method to observe a Property.</rdfs:comment>
+        <rdfs:isDefinedBy>http://purl.oclc.org/NET/ssnx/ssn</rdfs:isDefinedBy>
+        <dc:source>skos:exactMatch &apos;sensor&apos; [SensorML OGC-0700]
+		                    http://www.opengeospatial.org/standards/sensorml 
+
+                                skos:closeMatch &apos;observation procedure&apos; [O&amp;M] 
+                                http://www.opengeospatial.org/standards/om 
+
+O&amp;M allows sensors, methods, instruments, systems, algorithms and process chains as the processUsed of an observation; this ontology allows a similar range of things (any thing that can do sensing), just they are all grouped under the term sensor (which is thus wider than the O&amp;M concept).</dc:source>
+        <rdfs:seeAlso>http://www.w3.org/2005/Incubator/ssn/wiki/SSN_Skeleton#Skeleton</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/GeoCoordinates -->
+
+    <owl:Class rdf:about="http://schema.org/GeoCoordinates"/>
+    
+
+
+    <!-- http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject -->
+
+    <owl:Class rdf:about="http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject"/>
+    
+
+
+    <!-- http://www.wurvoc.org/vocabularies/om-1.8/Quantity -->
+
+    <owl:Class rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Quantity">
+        <rdfs:label xml:lang="en">Quantity</rdfs:label>
+        <terms:description xml:lang="en">From the OM ontology.  Defines quantities such as Length, and in GCI all indicators are a subclass of Quantity and inherit its property of om:value and om:unit_of_measure.</terms:description>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Activity">
+        <terms:description xml:lang="en">An activity is the basic transformational action primitive with which processes and operations can be represented; it specifies how the world is changed. An enabling state defines what has to be true of the world in order for the activity to be performed. A caused state defines what is true of the world once the activity has been completed.
+
+An activity, along with its enabling and caused states, is called an activity cluster.The state tree linked by an enables relation to an activity specifies what has to be true in order for the activity to be performed. The state tree linked to an activity by a causes relation defines what is true of the world once the activity has been completed. Intermediate states of an activity can be defined by elaborating the aggregate activity into an activity network.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#for_Year">
+        <rdfs:label xml:lang="en">for year</rdfs:label>
+        <terms:description xml:lang="en">The year for which the indicator applies.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasAddressType">
+        <rdfs:label xml:lang="en">has Address Type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#ConsumeState">
+        <rdfs:label xml:lang="en">Consume State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty">
+        <rdfs:label>Measurement  Property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#BatteryLifetime">
+        <rdfs:label>Battery Lifetime</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasCitySection">
+        <rdfs:label xml:lang="en">has City Section</rdfs:label>
+        <terms:description xml:lang="en">The section of the city where the address is located.  Often used in countries like England, India and Japan.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#MeasurementRange">
+        <rdfs:label>Measurement  Range</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#North">
+        <rdfs:label xml:lang="en">North</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Platform">
+        <rdfs:label>Platform</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasOpeningTime">
+        <rdfs:label xml:lang="en">has Opening Time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/ISO37120/Environment.owl#8.8_Thing">
+        <rdfs:label>8.8_Thing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ofFeature">
+        <rdfs:label>of feature</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasPhoneNumber">
+        <rdfs:label xml:lang="en">has Phone Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest">
+        <rdfs:label>Feature of Interest</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Circle">
+        <rdfs:label xml:lang="en">Circle</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation">
+        <rdfs:label>quality of observation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasPhoneType">
+        <rdfs:label xml:lang="en">has Phone Type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasValue">
+        <rdfs:label>has value</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasState">
+        <rdfs:label xml:lang="en">has State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Precision">
+        <rdfs:label>Precision</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.geonames.org/ontology/ontology_v3.1.rdf#Feature">
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
+        <terms:description xml:lang="en">From Geonames ontology.  Covers all types of geonames.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue">
+        <rdfs:label>Observation Value</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasEmail">
+        <rdfs:label xml:lang="en">has Email</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasWebSite">
+        <rdfs:label xml:lang="en">has Web Site</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#observedProperty">
+        <rdfs:label>observed property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#GovernmentOrganization">
+        <rdfs:label xml:lang="en">Government Organization</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasOutput">
+        <rdfs:label>has output</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#OperatingRange">
+        <rdfs:label>Operating Range</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#CommunicationLink">
+        <rdfs:label xml:lang="en">Communication Link</rdfs:label>
+        <terms:description xml:lang="en">Communication-links are established among organizational agents in various roles. Communication-links capture the notion of benevolent communication in which agents regard each other as peers volunteer information that they believe relevant to other agents. This exchange does not create obligations for any agent.
+
+The communication-link is a unidirectional link used to communicate information from one agent to another. It describes, for an agent in a given organizational role, the information it is interested in receiving and the information it can benevolently distribute to others.
+
+For example, an agent in the “C++ programmer” role may distribute information about the state of the file server to other programmers, alerting them each time the server is down.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/tonne">
+        <rdfs:label xml:lang="en">tonne</rdfs:label>
+        <rdfs:label xml:lang="nl">ton</rdfs:label>
+        <rdfs:label xml:lang="zh">公噸</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Ratio_scale">
+        <rdfs:label xml:lang="en">Ratio Scale</rdfs:label>
+        <terms:description xml:lang="en">From OM ontology.  Ratio scale (versus ordinal, nominal).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Authority">
+        <terms:description xml:lang="en">Adequate authority is needed for the role to achieve its goals. Authorities include the right of using resource, the right to perform activities, and the right to execute status changing actions.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Stimulus">
+        <rdfs:label>Stimulus</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#ProduceState">
+        <rdfs:label xml:lang="en">Produce State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Condition">
+        <rdfs:label>Condition</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Role">
+        <terms:description xml:lang="en">A Role defines one or more prototypical job functions in an organization.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#attachedSystem">
+        <rdfs:label>attached system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#OrState">
+        <rdfs:label xml:lang="en">Or State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability">
+        <rdfs:label>Measurement Capability</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem">
+        <rdfs:label>has subsystem</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasOperatingHours">
+        <rdfs:label xml:lang="en">has Operating Hours</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Process">
+        <rdfs:label>Process</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#CommunicationWithAuthority">
+        <terms:description xml:lang="en">A special kind of authority is the control relationship between two organizational agents. For OA1 to have authority over OA2 implies that OA1 is able to extract a commitment from OA2 to achieve a goal that is defined as part of OA2’s organization-roles. In order to extract that commitment, OA1 has to be related directly or indirectly by a communication-with-authority (CWA) link relation.
+
+The Communication-with-Authority link, used when communication is intended to create obligations, specifies the two agents, one in the authority position (called supervisor) and the other in the controled position (called supervisee), among which communication takes place. Because we model communication as exchange of speech-acts, authority of an agent appears as the set of speech-acts this agent can use in order to create obligations for the other agent. For example, an agent may have authority to request another agent to perform action A1, but not to perform action A2. In this case, the second agent will have to commit to achieving A1 when requested by the first agent, but not A2.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasPersonalEmail">
+        <rdfs:label xml:lang="en">has Personal Email</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#FaxNumber">
+        <rdfs:label xml:lang="en">Fax Telephone Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/kp#KP_prop">
+        <rdfs:label xml:lang="en">KP Proposition</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasStreetType">
+        <rdfs:label xml:lang="en">has Street Type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Saturday">
+        <rdfs:label xml:lang="en">Saturday</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#implementedBy">
+        <rdfs:label>implemented by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Input">
+        <rdfs:label>Input</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Home">
+        <rdfs:label xml:lang="en">Home Address</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="geo:6252001">
+        <rdfs:label xml:lang="en">United States</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#HomeAddress">
+        <rdfs:label xml:lang="en">Home Address</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#term">
+        <rdfs:label xml:lang="en">term</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#forProperty">
+        <rdfs:label>for property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasOperatingProperty">
+        <rdfs:label>has operating property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensorDataSheet">
+        <rdfs:label>Sensor Data Sheet</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasGeoCoordinates">
+        <rdfs:label xml:lang="en">has Geo Coordinates</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Work">
+        <rdfs:label xml:lang="en">WorkAddress</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasClosingTime">
+        <rdfs:label xml:lang="en">has Closing Time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasOperatingRange">
+        <rdfs:label>has operating range</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Deployment">
+        <rdfs:label>Deployment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Latency">
+        <rdfs:label>Latency</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasStreetNumber">
+        <rdfs:label xml:lang="en">has Street Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Cottage">
+        <rdfs:label xml:lang="en">Cottage Address</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform">
+        <rdfs:label>deployed on platform</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#OperatingPowerRange">
+        <rdfs:label>Operating Power Range</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasUnitNumber">
+        <rdfs:label xml:lang="en">has Unit Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensorInput">
+        <rdfs:label>Sensor Input</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasDeployment">
+        <rdfs:label>has deployment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Wednesday">
+        <rdfs:label xml:lang="en">Wednesday</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Compount_unit">
+        <rdfs:label xml:lang="en">Compound Unit</rdfs:label>
+        <terms:description xml:lang="en">OM compound unit that is used to represent divisions, ratios, etc.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SystemLifetime">
+        <rdfs:label>System Lifetime</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#startTime">
+        <rdfs:label>start time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Road">
+        <rdfs:label xml:lang="en">Road</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Friday">
+        <rdfs:label xml:lang="en">Friday</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#isProducedBy">
+        <rdfs:label>is produced by</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#CellNumber">
+        <rdfs:label xml:lang="en">Mobile Telephone Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#observationResultTime">
+        <rdfs:label>observation result time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#WorkAddress">
+        <rdfs:label xml:lang="en">Work Address</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Selectivity">
+        <rdfs:label>Selectivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Drift">
+        <rdfs:label>Drift</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasBuilding">
+        <rdfs:label xml:lang="en">has Building</rdfs:label>
+        <terms:description xml:lang="en">The building where the address is located.  Often used in countries like England, India and Japan.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasCountryCode">
+        <rdfs:label xml:lang="en">has Country Code</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="gn:6251999">
+        <rdfs:label xml:lang="en">Canada</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest">
+        <rdfs:label>feature of interest</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Policy">
+        <terms:description xml:lang="en">Constraints on the performance of the role’s processes. These constraints are unique to the organization role.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf">
+        <rdfs:label>is property of</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Sensitivity">
+        <rdfs:label>Sensitivity</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Thursday">
+        <rdfs:label xml:lang="en">Thursday</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/State">
+        <rdfs:label xml:lang="en">State</rdfs:label>
+        <terms:description xml:lang="en">From schema.org - general concept of State.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Percentage">
+        <rdfs:label xml:lang="en">percentage</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SurvivalRange">
+        <rdfs:label>Survival Range</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Drive">
+        <rdfs:label xml:lang="en">Drive</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#observes">
+        <rdfs:label>observes</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Goal">
+        <terms:description xml:lang="en">A goal is achieved if the state that it is linked to via a satisfiedBy property is true. A Goal achieved by the performance of a Process. 
+
+Goals can be ordered directly via the dependsOn property.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasCountry">
+        <rdfs:label xml:lang="en">has Country</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#endTime">
+        <rdfs:label>end time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SurvivalProperty">
+        <rdfs:label>Survival Property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#UseState">
+        <rdfs:label xml:lang="en">Use State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed">
+        <rdfs:label>sensing method used</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#Event">
+        <rdfs:label>Event</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Monday">
+        <rdfs:label xml:lang="en">Monday</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#ForProfitOrganization">
+        <rdfs:label xml:lang="en">For Profit Organization</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/prov#Entity">
+        <rdfs:label xml:lang="en">Entity</rdfs:label>
+        <terms:description xml:lang="en">An Entity as defined in the PROV provenance ontology.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#HomeNumber">
+        <rdfs:label xml:lang="en">Home Telephone Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#time">
+        <rdfs:label>time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#inCondition">
+        <rdfs:label>in condition</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#for_city">
+        <rdfs:label xml:lang="en">for city</rdfs:label>
+        <terms:description xml:lang="en">The city for which the indicator has been defined. The indicator is a om:Quantity that points to a om:Phenomenon using the om:phenomenon object property.  Therefore for_City is a subclass of om:phenomenon.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#OrganizationAgent">
+        <terms:description xml:lang="en">An organization-agent (or in short agent) plays one or more roles. Each role is defined with a set of goals that the role is created to fulfill and is allocated with proper authority at the level that the role can achieve its goals. Agents perform activities in the organization, each of which may consume resource (e.g. materials, labors, tools, etc.) and there is a set of constraints that constrain the activities. An agent can also be a member of a team set up in response to a special task, has skill requirements, and has a set of communication-link defining the protocol that it communicates with other agents in the organization.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime">
+        <rdfs:label>observation sampling time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#PhoneType">
+        <rdfs:label xml:lang="en">Phone Type</rdfs:label>
+        <terms:description xml:lang="en">Types of phoned include home, cell, work, etc.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#CellPhone">
+        <rdfs:label xml:lang="en">Cell Phone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Division">
+        <terms:description xml:lang="en">An organization consists of divisions.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#ReleaseState">
+        <rdfs:label xml:lang="en">Release State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#System">
+        <rdfs:label>System</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Empowerment">
+        <terms:description xml:lang="en">Empowerment is the right of an oa to perform status changing actions, such as &quot;commit&quot;, &quot;enable&quot;, &quot;suspend&quot;, etc. Empowerment naturally falls into two classes: state and activity empowerment.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#StreetType">
+        <rdfs:label xml:lang="en">Street Type</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#West">
+        <rdfs:label xml:lang="en">West</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#implements">
+        <rdfs:label>implements</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long">
+        <rdfs:label xml:lang="en">longitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/trust.owl#Trust">
+        <rdfs:label xml:lang="en">Trust</rdfs:label>
+        <terms:description xml:lang="en">Contains two types of trust, in belief and performance.
+The &apos;trustor&apos; is the agent is is doing the trusting.  The &apos;trustee&apos; is the agent that is being trusted.
+&apos;trust_degree&apos; is a number between zero and one that signifies the degree to which the trustor trusts the trustee.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalProperty">
+        <rdfs:label>has survival property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Sunday">
+        <rdfs:label xml:lang="en">Sunday</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput">
+        <rdfs:label>Sensor Output</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty">
+        <rdfs:label>has measurement property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Accuracy">
+        <rdfs:label>Accuracy</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Tuesday">
+        <rdfs:label xml:lang="en">Tuesday</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/City">
+        <rdfs:label xml:lang="en">City</rdfs:label>
+        <terms:description xml:lang="en">From schema.org - general City concept.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Resource">
+        <terms:description xml:lang="en">One or more resources may be allocated to a role for disposition under its authority.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasLocation">
+        <rdfs:label xml:lang="en">has Location</rdfs:label>
+        <terms:description xml:lang="en">Closet street intersection for the organization.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat">
+        <rdfs:label xml:lang="en">lattitude</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#HoursOfOperation">
+        <terms:description xml:lang="en">HoursOfOperation class provides the ability to define when the contact &quot;opens&quot; and &quot;closes&quot;. Used for businesses.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/trust.owl#Trust_p">
+        <rdfs:label xml:lang="en">Trust in Performance</rdfs:label>
+        <terms:description xml:lang="en">Trust based on believing that another agent will perform an activity correctly.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Crescent">
+        <rdfs:label xml:lang="en">Crescent</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#MaintenanceSchedule">
+        <rdfs:label>Maintenance Schedule</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#CottageAddress">
+        <rdfs:label xml:lang="en">Cottage Address</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#AndState">
+        <rdfs:label xml:lang="en">And State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasStreet">
+        <rdfs:label xml:lang="en">has Street</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/trust.owl#Trust_b">
+        <rdfs:label xml:lang="en">Trust in Belief</rdfs:label>
+        <terms:description xml:lang="en">Trust based on an agent believing in what another agent believes.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#TerminalState">
+        <rdfs:label xml:lang="en">Terminal State</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/trust.owl#Trusted_certainty_degree">
+        <rdfs:label xml:lang="en">Trusted Certainty Degree</rdfs:label>
+        <terms:description xml:lang="en">The degree to which a KP_prop (i.e, Proposition) and therefore any Measure is believed. It links to a Trust class that defines the trustor, trustee and degree of trust.
+The value of &apos;certainty&apos; is usually the product of the KP_prop &apos;assigned_certainty_degree&apos; and the Trust &apos;trust_degree&apos;.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.5">
+        <rdfs:label>SO2 (sulphur dioxide) concentration (ISO37120-8.5)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#NonGovernmentOrganization">
+        <rdfs:label xml:lang="en">Non Government Organization</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.6">
+        <rdfs:label>O3 (Ozone) concentration (ISO37120-8.6)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Sensing">
+        <rdfs:label>Sensing</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.3">
+        <rdfs:label>Greenhouse gas emissions measured in tonnes per capita (ISO37120-8.3)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.4">
+        <rdfs:label>NO2 (nitrogen dioxide) concentration (ISO37120-8.4)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://schema.org/Country">
+        <rdfs:label xml:lang="en">Country</rdfs:label>
+        <terms:description xml:lang="en">From schema.org - general concept of Country.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Process">
+        <terms:description xml:lang="en">Activity networks that have been defined to achieve the goals.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasStreetDirection">
+        <rdfs:label xml:lang="en">has Street Direction</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.7">
+        <rdfs:label>Noise Pollution (ISO37120-8.7)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.8">
+        <rdfs:label>Percentage change in number of native species (ISO37120-8.8)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#South">
+        <rdfs:label xml:lang="en">South</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Street">
+        <rdfs:label xml:lang="en">Street</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.1">
+        <rdfs:label>Fine particulate matter (PM2.5) concentration (ISO37120-8.1)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#WorkNumber">
+        <rdfs:label xml:lang="en">Work Telephone Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart">
+        <rdfs:label>deployment process part</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/ISO37120.owl#8.2">
+        <rdfs:label>Particulate matter (PM10) concentration (ISO37120-8.2)</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#DaysOfWeek">
+        <rdfs:label xml:lang="en">Days of the Week</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasDate">
+        <rdfs:label xml:lang="en">has Date</rdfs:label>
+        <terms:description xml:lang="en">Specifies the opening and closing times for a specific date.  For example, used to provide times for a holiday which deviates from the norm.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Address">
+        <rdfs:label xml:lang="en">Address</rdfs:label>
+        <terms:description xml:lang="en">Address is the main concept for a contact.  It has been designed to represent any type of address in the world, including India and the UK.  For example, the property hasBuilding is important in many UK and Indian addresses to further identify the person or business location.
+
+Street information is divided into separate properties to fully indentify direction (hasStreetDirection), Type (hasStreetType), etc.  See the associated list of properties for more.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Device">
+        <rdfs:label>Device</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/numerical_value">
+        <rdfs:label xml:lang="en">numerical value</rdfs:label>
+        <terms:description xml:lang="en">From OM ontology, the numerical value of a Measure.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#madeObservation">
+        <rdfs:label>made observation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.wurvoc.org/vocabularies/om-1.8/Unit_multiple_or_submultiple">
+        <rdfs:label xml:lang="en">Unit Multiple or Submultiple</rdfs:label>
+        <terms:description xml:lang="en">From the OM ontology. Denotes multiples of a unit, such as kilo or giga X.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasProperty">
+        <rdfs:label>has property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasAreaCode">
+        <rdfs:label xml:lang="en">has Area Code</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#for_city_service">
+        <rdfs:label xml:lang="en">for city service</rdfs:label>
+        <terms:description xml:lang="en">The city service that this indicator applies to.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Skill">
+        <terms:description xml:lang="en">One or more skills required for the realization of a role.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#OperatingProperty">
+        <terms:description xml:lang="en">Properties that define the hours of operation of the contact.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Observation">
+        <rdfs:label>Observation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Resolution">
+        <rdfs:label>Resolution</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#East">
+        <rdfs:label xml:lang="en">East</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#StreetDirection">
+        <rdfs:label xml:lang="en">Street Direction</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/GCI/Foundation/GCI-Foundation.owl#Population_Product_Unit">
+        <rdfs:label xml:lang="en">Population Product Unit</rdfs:label>
+        <terms:description xml:lang="en">It is the product of some number (term_1) and a population count (term_2).</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability">
+        <rdfs:label>has measurement  capability</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#onPlatform">
+        <rdfs:label>on platform</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#isProxyFor">
+        <rdfs:label>isProxyFor</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#Organization">
+        <terms:description xml:lang="en">An organization is a set of constraints on the activities performed by agents. An organization consists of a set of divisions and subdivisions (recursive definition), a set of organization-agents (said to be members of a division of the organization), a set of roles that the members play in the organization, and an organization-goal tree that specifies the goals (and their decomposition into subgoals) the members try to achieve.
+
+The hasOwnership property takes as values individuals of Ownership.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Boulevard">
+        <rdfs:label xml:lang="en">Boulevard</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess">
+        <rdfs:label>Deployment-related Process</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Property">
+        <rdfs:label>Property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#WorkPhone">
+        <rdfs:label xml:lang="en">Work Phone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#DetectionLimit">
+        <rdfs:label>detection limit</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#inDeployment">
+        <rdfs:label>in deployment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#OperatingProperty">
+        <rdfs:label>Operating Property</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasWorkEmail">
+        <rdfs:label xml:lang="en">has Work Email</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#ResponseTime">
+        <rdfs:label>Response time</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasCity">
+        <terms:description xml:lang="en">has City</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#Avenue">
+        <rdfs:label xml:lang="en">Avenue</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.org/NET/c4dm/event.owl#place">
+        <rdfs:label>place</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasTelephone">
+        <rdfs:label xml:lang="en">has Telephone</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#FaxPhone">
+        <rdfs:label xml:lang="en">Fax Line</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalRange">
+        <rdfs:label>has survival range</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Output">
+        <rdfs:label>Output</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#observationResult">
+        <rdfs:label>observation result</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#hasInput">
+        <rdfs:label>has input</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/organization.owl#State">
+        <terms:description xml:lang="en">An enabling state defines what has to be true of the world in order for the activity to be performed. A caused state defines what is true of the world once the activity has been completed.
+
+An activity, along with its enabling and caused states, is called an activity cluster. The state tree linked by an enables relation to an activity specifies what has to be true in order for the activity to be performed. The state tree linked to an activity by a causes relation defines what is true of the world once the activity has been completed.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#Frequency">
+        <rdfs:label>Frequency</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.oclc.org/NET/ssnx/ssn#deployedSystem">
+        <rdfs:label>deployed system</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#AddressType">
+        <rdfs:label xml:lang="en">Address Type</rdfs:label>
+        <terms:description xml:lang="en">Different type for home, office, cottage, etc.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#TollFreeNumber">
+        <rdfs:label xml:lang="en">Toll  Free Telephone Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#TollFreePhone">
+        <rdfs:label xml:lang="en">Toll Free Number</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#PhoneNumber">
+        <rdfs:label xml:lang="en">Phone Number</rdfs:label>
+        <terms:description xml:lang="en">PhoneNumber is another core class. It is divided into country code, and phone number.</terms:description>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#hasPostalCode">
+        <rdfs:label xml:lang="en">has Postal Code</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://ontology.eil.utoronto.ca/icontact.owl#HomePhone">
+        <rdfs:label xml:lang="en">Home Phone</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
